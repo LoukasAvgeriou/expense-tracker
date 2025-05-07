@@ -39,4 +39,4 @@ If you want to run the project locally, follow these steps:
 
    `npm run dev`
 
-7. The terminal will provide a local address (usually `http://localhost:3000`) where you can view the project in your browser.
+7. The terminal will provide a local address where you can view the project in your browser.
