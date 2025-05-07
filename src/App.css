@@ -1,0 +1,25 @@
+/* General App styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial;
+  background-color: #202122;
+}
+
+.app-container {
+  padding: 1rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+/* changes for phone screens */
+@media (max-width: 600px) {
+  .tab-card {
+    padding: 0.8rem;
+    max-width: 100%;
+    /* Use full width on mobile */
+  }
+}

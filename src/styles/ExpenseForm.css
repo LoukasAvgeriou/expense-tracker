@@ -1,0 +1,95 @@
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.expense-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-form label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.expense-form input,
+.expense-form select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+.expense-form button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.expense-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Today's expenses list */
+.expense-list {
+    text-align: left;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.delete-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.delete-button:hover {
+    background-color: #e44b4b;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.daily-total-exp-form {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+
+    .expense-form input,
+    .expense-form select,
+    .expense-form button {
+        font-size: 0.95rem;
+    }
+}

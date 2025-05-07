@@ -1,0 +1,44 @@
+.tabs-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #7a8aa0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tab-button:hover {
+    background-color: #e0e2e6;
+}
+
+.tab-button.active {
+    background-color: #b8b8b8;
+}
+
+/* Tab content box */
+.tab-card {
+    max-width: 500px;
+    /* limit width on large screens */
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .tab-card {
+        padding: 0.8rem;
+        max-width: 100%;
+        /* Use full width on mobile */
+    }
+}
